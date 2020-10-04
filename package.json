@@ -1,5 +1,10 @@
 {
   "name": "holo-ayame",
+  "author": {
+    "name": "Pu-Hsuan Wu",
+    "email": "hwupu.cs01@g2.nctu.edu.tw"
+  },
+  "license": "CC-BY-NC-4.0",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
