@@ -6,5 +6,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ]
   },
-  target: 'static'
+  ssr: false,
+  target: 'static',
+  plugins: ['@/plugins/vue-konva.js']
 }
