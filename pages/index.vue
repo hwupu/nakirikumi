@@ -14,6 +14,7 @@
 
 <script>
 export default {
+  layout: 'nakiri2020',
   data() {
     return {
       name: '',
