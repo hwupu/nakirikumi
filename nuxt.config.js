@@ -6,7 +6,15 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ]
   },
+  css: [
+    '~/css/main.sass'
+  ],
   ssr: false,
   target: 'static',
-  plugins: ['@/plugins/vue-konva.js']
+  plugins: ['@/plugins/vue-konva.js'],
+  modules: ['nuxt-buefy'],
+  buefy: {
+    css: false,
+    materialDesignIcons: false
+  }
 }
