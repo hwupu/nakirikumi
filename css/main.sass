@@ -1,13 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+
+
 @import "~bulma/sass/utilities/_all";
-
-
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 
-html
+html, body
   background-color: #5a1116
 
+footer
+  margin-top: 50pt
 
-.nkr-container
+body, input, textarea
+  font-family: 'Noto Serif TC', serif
+
+body
   background-color: #fff7ea
+  background-image: url('../assets/bg.Lily@2x.png'), url('../assets/bg.banner@2x.png')
+  background-repeat: no-repeat, repeat-y
+  background-position: bottom -30pt right -40pt, top left
+  background-size: 230pt, 100pt
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.7)
+  margin: 0 auto
+  max-width: 600pt
+  padding: 20pt 20pt 20pt 120pt
+  position: relative
+
+.nkr-title
+  background-image: url('../assets/NakiriAyameLogo.svg')
+  background-repeat: no-repeat
+  background-position: top 70pt center
+  background-size: 110pt
+  padding-top: 250pt
+  padding-bottom: 50pt
+  display: flex
+  font-weight: 600
+
+.nkr-nakirigami, .nkr-application
+  font-size: 28pt
+  margin: 0 5pt
+
+
+.nkr-nakirigami 
+  flex-basis: 45%
+  text-align: right
+
+.nkr-application
+  flex-basis: 55%
+
+.nkr-form
+  max-width: 400pt
+  margin: 0 auto
+
+  li
+    display: flex
+    margin-bottom: 25pt
+
+.nkr-form li > label, .nkr-form li > input, .nkr-form li > textarea
+  display: block
+
+
+.nkr-form li > label
+  font-size: 14pt
+  margin: 0 5pt
+  flex-basis: 45%
+  text-align: right
+  font-weight: 600
+  line-height: 2em
+
+.nkr-form li > input, .nkr-form li > textarea
+  margin: 0 5pt
+  flex-basis: 55%
+
+
+.nkr-form li > textarea
+  min-height: 5em
+
+@media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2)
+  body
+    background-position: bottom -50pt right -60pt, top left -42pt
+    padding: 10pt 20pt 10pt 68pt
+
+  .nkr-form li, .nkr-title
+    display: block
+
+  .nkr-form li > label
+    font-size: 12pt
+    text-align: left
+
+  .nkr-nakirigami, .nkr-application
+    font-size: 20pt
+    text-align: center
+
+.test
+  background: radial-gradient(circle, rgba(255,227,150,1) 0%, rgba(244,201,116,1) 35%, rgba(214,173,96,1) 100%)
+  -webkit-mask-image: url('../assets/bg.patter1.svg')
+  -webkit-mask-size: 86pt auto
+  -webkit-mask-repeat: repeat-y
+  mask-image: url('../assets/bg.patter1.svg')
+  mask-size: 86pt auto
+  mask-repeat: repeat-y
+  width: 86pt
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+
+.flower1
+  background-image: url('../assets/bg.flower1.svg')
+  background-repeat: no-repeat
+  background-size: 60pt
+  position: absolute
+  top: 50pt
+  left: 20pt
+  width: 60pt
+  height: 60pt

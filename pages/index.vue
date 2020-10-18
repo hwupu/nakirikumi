@@ -1,49 +1,49 @@
 <template>
   <div>
-    <h1>Application</h1>
-    <input v-model="name">
-    <v-stage ref="card" :config="configKonva">
-      <v-layer>
-        <v-text :config="{text: name}"></v-text>
-        <v-circle :config="configCircle"></v-circle>
-      </v-layer>
-    </v-stage>
-    <button v-on:click="save()">save</button>
+    <section class="nkr-title nkr-form">
+      <div class="nkr-nakirigami">百鬼組</div>
+      <div class="nkr-application">入組申請書</div>
+    </section>
+
+    <section class="nkr-form">
+      <form>
+        <ul>
+          <li>
+            <label>名稱</label>
+            <input class="input" type="text">
+          </li>
+          <li>
+            <label>所在地</label>
+            <input class="input" type="text">
+          </li>
+          <li>
+            <label>入教契機</label>
+            <textarea class="input"></textarea>
+          </li>
+          <li>
+            <label>最喜歡大小姐的哪一點？</label>
+            <textarea class="input"></textarea>
+          </li>
+          <li>
+            <label>想對大小姐說的話？</label>
+            <textarea class="input"></textarea>
+          </li>
+          <li>
+            <label>入教日期</label>
+            <input class="input" type="text">
+          </li>
+          <li>
+            <label></label>
+            <button class="button is-medium">入教</button>
+          </li>
+        </ul>
+      </form>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'nakiri2020',
-  data() {
-    return {
-      name: '',
-      configKonva: {
-        width: 200,
-        height: 200
-      },
-      configCircle: {
-        x: 100,
-        y: 100,
-        radius: 70,
-        fill: "red",
-        stroke: "black",
-        strokeWidth: 4
-      }
-    }
-  },
-  methods: {
-    save() {
-      console.log(this.$refs.card);
-      var dataUri = this.$refs.card.getStage().toDataURL({ pixelRatio: 3 });
-      var link = document.createElement('a');
-      link.download = 'card.png';
-      link.href = dataUri;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      // delete link;
-    }
-  }
+  layout: 'nakiri2020'
 }
 </script>
