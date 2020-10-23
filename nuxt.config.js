@@ -12,6 +12,9 @@ export default {
   components: true,
   ssr: false,
   target: 'static',
+  router: {
+    base: '/nakirikumi/'
+  },
   plugins: ['@/plugins/vue-konva.js'],
   modules: ['nuxt-buefy'],
   buefy: {
