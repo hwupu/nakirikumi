@@ -9,6 +9,7 @@ export default {
   css: [
     '~/css/main.sass'
   ],
+  components: true,
   ssr: false,
   target: 'static',
   plugins: ['@/plugins/vue-konva.js'],
