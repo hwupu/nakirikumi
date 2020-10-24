@@ -77,6 +77,20 @@ body
 .nkr-form li > textarea
   min-height: 5em
 
+.test
+  background: radial-gradient(circle, rgba(255,227,150,1) 0%, rgba(244,201,116,1) 35%, rgba(214,173,96,1) 100%)
+  -webkit-mask-image: url('../assets/bg.patter1.svg')
+  -webkit-mask-size: 86pt auto
+  -webkit-mask-repeat: repeat-y
+  mask-image: url('../assets/bg.patter1.svg')
+  mask-size: 86pt auto
+  mask-repeat: repeat-y
+  width: 86pt
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+
 @media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2)
   body
     background-position: bottom -50pt right -60pt, top left -42pt
@@ -93,19 +107,8 @@ body
     font-size: 20pt
     text-align: center
 
-.test
-  background: radial-gradient(circle, rgba(255,227,150,1) 0%, rgba(244,201,116,1) 35%, rgba(214,173,96,1) 100%)
-  -webkit-mask-image: url('../assets/bg.patter1.svg')
-  -webkit-mask-size: 86pt auto
-  -webkit-mask-repeat: repeat-y
-  mask-image: url('../assets/bg.patter1.svg')
-  mask-size: 86pt auto
-  mask-repeat: repeat-y
-  width: 86pt
-  height: 100%
-  position: absolute
-  top: 0
-  left: 0
+  .test
+    left: -42pt
 
 .flower1
   background-image: url('../assets/bg.flower1.svg')
