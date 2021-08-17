@@ -2,8 +2,8 @@
   <div>
     <nav class="breadcrumb is-right has-arrow-separator">
       <ul>
-        <li><a herf="#">申請入組</a></li>
-        <li><a herf="#">領取證明</a></li>
+        <li><nuxt-link to="/">申請入組</nuxt-link></li>
+        <li><nuxt-link to="/profile">領取證明</nuxt-link></li>
         <li><a herf="#">其他</a></li>
       </ul>
     </nav>
